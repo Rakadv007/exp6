@@ -1,8 +1,12 @@
 body{
-  display: flexbox;
+  display: flex; /* flexbox is invalid */
   justify-content: center;
-  align-content: center;
-  background-image: url("Realm.png");
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/Realm.png"); /* FIXED PATH */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1{
@@ -12,22 +16,14 @@ h1{
 img:hover{
   transform: scale(1.1);
   transition: transform 0.3s ease;
-  overflow: visible;
   border-radius: 7px;
-}
-
-product{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
 }
 
 img{
   width: 180px;
   height: 120px;
   object-fit: cover;
-  background : linear-gradient(to right , #fffaf1, #a5a498);
+  background: linear-gradient(to right , #fffaf1, #a5a498);
 }
 
 .card{
@@ -40,13 +36,11 @@ img{
   color: white;
   text-shadow: 1px 1px 2px black;
   margin: 10px;
-  
+  transition: transform 0.3s ease;
 }
 
 .card:hover{
   transform: scale(1.05);
-  transition: transform 0.3s ease;
-  overflow: visible;
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
 

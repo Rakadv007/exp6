@@ -1,9 +1,9 @@
 body{
-  display: flex; /* flexbox is invalid */
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("/Realm.png"); /* FIXED PATH */
+  background-image: url("/Realm.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@ img:hover{
   transform: scale(1.1);
   transition: transform 0.3s ease;
   border-radius: 7px;
+  overflow: visible;
 }
 
 img{
